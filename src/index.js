@@ -83,7 +83,7 @@ const updateFile = () => {
 const getDirSize = (dir) => {
   let total = 0;
   try {
-    stat = fs.lstatSync(dir)
+    const stat = fs.lstatSync(dir)
     if (stat.isFile()) {
       total += stat.size
     } else if (stat.isDirectory()) {
@@ -94,7 +94,7 @@ const getDirSize = (dir) => {
       })
     }
   } catch(e) {
-    console.log(e)
+    console.log("Error while calculating dir size!")
   }
   return total;
 }
