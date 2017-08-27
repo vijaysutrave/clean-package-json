@@ -1,6 +1,6 @@
 {
   "name": "clean-package-json",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "\"Reduce install times on production, clean up package json\"",
   "keywords": "reduce, install, time, production, npm, clean, package, json",
   "main": "src/index.js",

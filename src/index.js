@@ -87,7 +87,7 @@ const getDirSize = (dir) => {
     if (stat.isFile()) {
       total += stat.size
     } else if (stat.isDirectory()) {
-      files = fs.readdirSync(dir)
+      let files = fs.readdirSync(dir)
       files.forEach((file) => {
         if(file)
         total += getDirSize(path.join(dir, file))
