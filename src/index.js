@@ -162,6 +162,7 @@ const cleanUp = (options) => {
   prettify()
   updateFile()
   printTips()
+  console.log();
 }
 
 
